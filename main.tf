@@ -1,10 +1,10 @@
 provider "aws" {
-  region = "ap-south-1"   # Change to your preferred region
+  region = "us-east-2" 
 }
 
 resource "aws_instance" "my_ec2" {
-  ami           = "ami-0f58b397bc5c1f2e8"  # Amazon Linux 2 AMI (ap-south-1)
-  instance_type = "t2.micro"
+  ami           = "ami-05efc83cb5512477c"  
+  instance_type = "t3.micro"
 
   tags = {
     Name = "MyTerraformEC2"
